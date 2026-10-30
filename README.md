@@ -1,6 +1,8 @@
 # PowerBin for Premiere Pro
 
-![PowerBin](assets/branding/youtube/powerbin-yt-c.png)
+[![Watch the video: MAKE PRESETS with just (CTRL+C) in Premiere Pro](https://img.youtube.com/vi/XTd8OHkrt_U/maxresdefault.jpg)](https://www.youtube.com/watch?v=XTd8OHkrt_U)
+
+▶ **Video:** [MAKE PRESETS with just (CTRL+C) in Premiere Pro](https://www.youtube.com/watch?v=XTd8OHkrt_U)
 
 **Copy once. Paste forever.** PowerBin is a free, open-source macOS menu-bar app that saves
 anything you copy in Adobe Premiere Pro (clips, lower thirds, adjustment layers, effect
@@ -31,9 +33,9 @@ Good fits:
   zoom-punch-in keyframes, caption templates, intro/outro sequences.
 - **Anything you would otherwise keep in a "template" project** and copy out of by hand.
 
-## What the demo video shows
+## What the video shows
 
-The ~45 second demo walks through the full round trip, silent, in six shots:
+[Watch it on YouTube](https://www.youtube.com/watch?v=XTd8OHkrt_U). The workflow it demonstrates, step by step:
 
 | # | What you see | Why it matters |
 |---|---|---|

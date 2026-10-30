@@ -1,6 +1,7 @@
 # PowerBin user guide
 
 How to set up and use PowerBin with Premiere Pro, with the caveats for each part.
+Prefer to watch first? [Video walkthrough on YouTube](https://www.youtube.com/watch?v=XTd8OHkrt_U).
 Every section ends with a **Caveats** list. The project-wide list (Premiere versions, macOS,
 building) is in [KNOWN_ISSUES.md](../KNOWN_ISSUES.md).
 
