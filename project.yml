@@ -1,0 +1,36 @@
+name: PowerBin
+options:
+  bundleIdPrefix: com.adityavishwakarma
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+
+targets:
+  PowerBin:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/PowerBinPersonal
+    resources:
+      - path: Resources
+    info:
+      path: Resources/Info.plist
+      properties:
+        LSUIElement: true              # menu-bar / agent app, no Dock icon
+        LSMinimumSystemVersion: "13.0"
+        # No NSAppleEventsUsageDescription: the app sends no Apple Events. Premiere is
+        # brought forward with NSRunningApplication.activate, which needs no TCC grant.
+        NSHighResolutionCapable: true
+        NSSupportsAutomaticTermination: true
+        NSSupportsSuddenTermination: true
+        CFBundleShortVersionString: "0.2.0"
+        CFBundleVersion: "2"
+        NSHumanReadableCopyright: "© 2026 Aditya Vishwakarma. MIT License."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adityavishwakarma.powerbin
+        MARKETING_VERSION: 0.2.0
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: 5.9
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
