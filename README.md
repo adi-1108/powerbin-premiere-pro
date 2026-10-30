@@ -12,6 +12,9 @@ from a floating panel that opens under your mouse.
 > [KNOWN_ISSUES.md](KNOWN_ISSUES.md) before you build it, and please open an issue with
 > your Premiere version if you try it.
 
+**How to use it:** the [user guide](docs/USER_GUIDE.md) covers setup, saving, pasting, paste
+modes, workspaces and troubleshooting, with the caveats for each step.
+
 ## The problem it solves
 
 Premiere has no real "snippet library". Every editor ends up with the same workaround: a
@@ -47,7 +50,7 @@ The ~45 second demo walks through the full round trip, silent, in six shots:
   Premiere keeps focus.
 - **Premiere-only hotkey.** The global shortcut is ignored unless Premiere Pro is frontmost
   (toggle in Preferences).
-- **Mouse-button friendly.** Map a mouse button to `F13`-`F19` in Karabiner-Elements and
+- **Mouse-button friendly.** Map a mouse button to `F13`-`F20` in Karabiner-Elements and
   record it as the hotkey; no modifier needed.
 - **Three paste modes.** `Native ⌘V` (default), `Excalibur` (sends your Excalibur shortcut
   after loading), or `Custom` (any recorded combo).

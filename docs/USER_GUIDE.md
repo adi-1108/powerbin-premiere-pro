@@ -46,7 +46,7 @@ PowerBin asks for two macOS permissions on first launch (a Permissions window ap
 | Permission | Why | Without it |
 |---|---|---|
 | **Accessibility** | Sends the paste keystroke into Premiere | Auto-paste and double-click paste do nothing; you paste with ⌘V yourself |
-| **Input Monitoring** | Hears bare F-keys (mouse buttons via Karabiner) | Normal modifier shortcuts still work; bare `F13`-`F19` may not |
+| **Input Monitoring** | Hears bare F-keys (mouse buttons via Karabiner) | Normal modifier shortcuts still work; bare `F13`-`F20` may not |
 
 Grant them in **System Settings → Privacy & Security**. You can reopen the window from
 **Preferences → Permissions → Open Permissions Panel**.
@@ -71,7 +71,7 @@ applies at once. **Esc** cancels, **✕** clears it, **Reset** restores the defa
 
 ### Opening it from a mouse button
 
-1. In Karabiner-Elements, map the mouse button to `f13` (or `f14`-`f19`).
+1. In Karabiner-Elements, map the mouse button to `f13` (or `f14`-`f20`).
 2. In PowerBin Preferences, click the hotkey field and press the mouse button once. It
    records as `F13`.
 3. That button now toggles the panel under the pointer.
@@ -80,7 +80,7 @@ applies at once. **Esc** cancels, **✕** clears it, **Reset** restores the defa
 - **The shortcut does nothing outside Premiere by default.** That's the "Only respond to
   the hotkey while Premiere Pro is frontmost" setting, and it is the number one "it's
   broken" report. Turn it off to use the shortcut anywhere.
-- Use at least one modifier (⌘ ⌥ ⌃ ⇧). A bare letter is rejected. Only `F13`-`F19` work
+- Use at least one modifier (⌘ ⌥ ⌃ ⇧). A bare letter is rejected. Only `F13`-`F20` work
   without a modifier.
 - **Don't reuse a Premiere shortcut.** The PowerBin hotkey is live while Premiere is in
   front, so a clash breaks one of them. Check **Premiere Pro → Keyboard Shortcuts…**.
@@ -111,8 +111,8 @@ The preset is saved in the active workspace.
   timeline items, effects and settings, and *references* to the media files by path. It
   does not copy the video, audio or image files. If those files move, get renamed or don't
   exist on this Mac, the pasted clips come in offline.
-- Graphics and titles made with Essential Graphics usually paste fine. Fonts are not
-  stored; a missing font is substituted by Premiere.
+- Fonts are not stored. A title using a font that isn't installed gets Premiere's usual
+  missing-font substitution.
 - **Presets are tied to the Premiere version that made them.** A preset saved in v25 may
   not paste in a newer Premiere. Re-copy and re-save after a Premiere upgrade.
 - **Clipboard snapshot → "Save only Adobe / Premiere pasteboard types"** makes presets
@@ -133,8 +133,9 @@ The preset is saved in the active workspace.
 PowerBin hides itself, brings Premiere to the front, writes the preset to the clipboard and
 sends the paste keystroke for your paste mode (section 6).
 
-**Paste it yourself instead:** single-click to select a preset, then use **Load** (button or
-right-click menu). With auto-paste off, Load only puts it on the clipboard, and the status
+**Paste it yourself instead:** select a preset, then click the clipboard icon in the preview
+pane or right-click → **Load Clipboard Only**. With auto-paste off, this only puts it on the
+clipboard, and the status
 line says "Loaded '…'. Cmd-V in Premiere." Click exactly where you want it in Premiere and
 press ⌘V.
 
@@ -184,8 +185,8 @@ Attributes, a remapped paste).
 
 ### Auto-paste after loading
 **Preferences → Paste behavior → Auto-paste after loading preset** (off by default). With it
-on, **Load** also pastes, not only double-click. Leave it off while you're testing a new
-setup.
+on, **Load** (clipboard icon / "Load Clipboard Only") also pastes, not only double-click.
+Leave it off while you're testing a new setup.
 
 **Caveats**
 - **The combo in PowerBin must match the one in Premiere/Excalibur exactly.** If they
@@ -197,6 +198,8 @@ setup.
 - Excalibur is a third-party paid extension and may itself have changed since this was
   tested.
 - Custom mode starts with a placeholder combo. Replace it before use.
+- With auto-paste on, the right-click item still says **Load Clipboard Only** but it pastes
+  too. The label doesn't change with the setting.
 
 ---
 
@@ -229,13 +232,13 @@ setup.
 |---|---|
 | *(type)* | Filter presets (the search field is focused when the panel opens) |
 | ↑ / ↓ | Move the selection, even while typing |
-| ↩ | Paste the selected preset |
+| ↩ | Paste the selected preset (always pastes, whatever the auto-paste setting) |
 | ⌘S | Save the clipboard as a new preset |
 | ⌘, | Preferences |
 | Esc | Close the panel |
 
-Mouse: click selects, **double-click pastes**, right-click opens Paste / Load / Favorite /
-Tag / Delete.
+Mouse: click selects, **double-click pastes**, right-click opens Paste to Premiere / Load
+Clipboard Only / Favorite / Tag / Delete.
 
 **Caveats**
 - These keys are fixed, not configurable.
